@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main_color: rgb(8, 33, 123);
+  --service_color: rgb(37, 59, 57);
+  --about_color: #beb183;
+  --highlight_color: rgb(182, 150, 69);
+}
+
+::selection {
+  background-color: var(--highlight_color);
+  color: white;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.link:hover {
+  color: var(--main_color);
+  text-decoration: underline;
+}
+
+.open-sans-font {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.heading_font {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}

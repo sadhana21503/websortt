@@ -1,0 +1,104 @@
+@import '../../globalscss/global.scss';
+.contact_container {
+  padding: 100px 30px 400px;
+  @include flex(column, null, center, 50px);
+  min-height: 100vh;
+  overflow: hidden;
+  background: url('../../assets//images/grid.jpg') center/cover no-repeat;
+  @include responsive(700px) {
+    padding-bottom: 500px;
+  }
+  @include responsive(900px) {
+    padding-bottom: 500px;
+  }
+  @include responsive(600px) {
+    padding-bottom: 600px;
+  }
+  @include responsive(450px) {
+    padding-bottom: 700px;
+  }
+  @include responsive(370px) {
+    padding-bottom: 800px;
+  }
+  @include responsive(291px) {
+    padding-bottom: 900px;
+  }
+ 
+  @include responsive(234px) {
+    padding-bottom: 950px;
+  }
+  @include responsive(210px) {
+    padding-bottom: 750px;
+  }
+  h1,
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+
+    @include responsive(404px) {
+      font-size: 2.5rem; 
+    }
+  }
+
+  @include responsive(404px) {
+    padding-left: 15px; 
+    padding-right: 15px; 
+  }
+
+  .form_section {
+    width: 90%; 
+    @include responsive(1140px) {
+      width: 98%;
+    }
+
+    form {
+      width: 100%;
+      flex-wrap: wrap;
+      @include flex(row, space-between, null, 30px); 
+
+      @include responsive(780px) {
+        @include flex(column, center, null, 20px);
+      }
+
+      input {
+        flex-basis: 45%;
+        border-radius: 40px;
+        border: 0.5px solid gray;
+        outline: none;
+        padding: 15px;
+        font-size: 1.2rem;
+
+        @include responsive(995px) {
+          flex-basis: 40%;
+        }
+
+        @include responsive(404px) {
+          width: 100%;
+          flex-basis: 100%;
+          padding: 10px;
+        }
+      }
+
+      button {
+        flex-basis: 45%;
+        border-radius: 40px;
+        outline: none;
+        padding: 15px; 
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        border: 2px solid var(--main_color);
+
+        @include responsive(995px) {
+          flex-basis: 40%;
+        }
+
+        @include responsive(404px) {
+          width: 100%;
+          flex-basis: 100%;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
